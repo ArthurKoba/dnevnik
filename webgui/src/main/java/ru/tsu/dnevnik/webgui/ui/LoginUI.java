@@ -59,7 +59,6 @@ public class LoginUI extends Panel
         this.dbUsers = dbUsers;
 
         // Make it look like a hyperlink
-        buttonGoToRegistration.addStyleName(Reindeer.BUTTON_LINK);
 
 // Handle clicks
         buttonGoToRegistration.addClickListener(new Button.ClickListener() {
@@ -82,10 +81,8 @@ public class LoginUI extends Panel
             }
         });
         loginButton.setClickShortcut(ShortcutAction.KeyCode.ENTER);
-        loginButton.addStyleName(Reindeer.BUTTON_DEFAULT);
 
         Label labelTitle = new Label("Вход в систему");
-        labelTitle.addStyleName(Reindeer.LABEL_H1);
 
         VerticalLayout layoutFields = new VerticalLayout(labelTitle, login, password, labelError, loginButton, labelGoToRegistration, buttonGoToRegistration);
         layoutFields.setSpacing(true);

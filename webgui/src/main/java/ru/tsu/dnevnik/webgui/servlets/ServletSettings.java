@@ -1,5 +1,8 @@
 package ru.tsu.dnevnik.webgui.servlets;
 
+import com.vaadin.annotations.Widgetset;
+
+@Widgetset("ru.tsu.dnevnik.webgui.AppWidgetSet")
 public class ServletSettings {
 
     //TODO установить productionMode=true для релиза

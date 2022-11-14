@@ -15,7 +15,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>9.2-1004-jdbc41</version>
+            <version>42.5.0</version>
         </dependency>
 
     </dependencies>
@@ -26,8 +26,8 @@
 
 <database.user>dnevnik</database.user>
 <database.password>dnevnik</database.password>
-<database.url>jdbc:postgresql://rate-soft.ru:5432/dnevnik</database.url>
-<database_test.url>jdbc:postgresql://rate-soft.ru:5432/dnevnik_test</database_test.url>
+<database.url>jdbc:postgresql://localhost:5432/dnevnik</database.url>
+<database_test.url>jdbc:postgresql://localhost:5432/dnevnik_test</database_test.url>
 
 <!--<database.url>jdbc:postgresql://31.41.42.117:5432/netprint</database.url>-->
 <!--<database_test.url>jdbc:postgresql://31.41.42.117:5432/netprint_test</database_test.url>-->

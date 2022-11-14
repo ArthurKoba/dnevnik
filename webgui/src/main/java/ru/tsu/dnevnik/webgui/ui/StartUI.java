@@ -2,6 +2,7 @@ package ru.tsu.dnevnik.webgui.ui;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
@@ -35,13 +36,13 @@ public class StartUI extends UI {
         Navigator navigator = getNavigator();
 
         navigator.addView(Views.LoginUI, new LoginUI(navigator, dbUsers));
+
         navigator.addView(Views.StudentUI, new StudentUI(navigator));
         navigator.addView(Views.AdministratorUI, new AdministratorUI(navigator));
         navigator.addView(Views.RegistrationUI, new RegistrationUI());
 
         String login = Auth.getLogin(getSession());
         if (login == null) {
-
             navigator.navigateTo(Views.LoginUI);
         } else
             navigator.navigateTo(Views.LoginUI);

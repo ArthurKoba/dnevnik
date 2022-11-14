@@ -1,6 +1,7 @@
 package ru.tsu.dnevnik.webgui.servlets;
 
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinServlet;
 import ru.tsu.dnevnik.webgui.ui.MainUI;
 import ru.tsu.dnevnik.webgui.ui.StartUI;
@@ -8,6 +9,7 @@ import ru.tsu.dnevnik.webgui.ui.StartUI;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(value = ServletSettings.PATH_MAIN, asyncSupported = true)
+@Widgetset("ru.tsu.dnevnik.webgui.AppWidgetSet")
 @VaadinServletConfiguration(
     productionMode = ru.tsu.dnevnik.webgui.servlets.ServletSettings.PRODUCTION_MODE,
     ui = StartUI.class,

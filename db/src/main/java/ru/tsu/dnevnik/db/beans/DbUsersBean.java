@@ -113,7 +113,7 @@ public class DbUsersBean implements DbUsers {
             logger.debug("getUserUI");
             return jdbcTemplate.queryForObject(SELECT_USER_BY_LOGIN, USER_UI_MAPPER, login);
         } catch (EmptyResultDataAccessException ex) {
-            logger.debug("getUserUI, error ", ex);
+            logger.error("getUserUI, error ", ex);
             return null;
         }
     }
@@ -187,7 +187,7 @@ public class DbUsersBean implements DbUsers {
             Array array = rs.getArray("task_ids");
             if (array != null) {
                 res.task_ids = new ArrayList<Integer>(Arrays.asList((Integer[]) array.getArray()));
-                System.out.println("\n++++++++++++++++++++++++++++\n" + res.task_ids);
+                logger.debug("Array@");
             }
             System.out.println("res.toString() " + res.toString());
             return res;

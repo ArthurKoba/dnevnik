@@ -8,8 +8,6 @@ import java.util.List;
  * Created by Alexey on 04.01.2015.
  */
 public class UserUI implements Serializable {
-
-
     public Integer id;
     public String login;
     public String email;
