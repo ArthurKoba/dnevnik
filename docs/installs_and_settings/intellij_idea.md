@@ -10,7 +10,7 @@
 - Скачать и установить IntelliJ IDEA | [Link](https://www.jetbrains.com/idea/download/)
 - Скачать и разархивировать ja-netfilter (активатор) | [Link](https://mega.nz/file/ST4SXL6T#bCNSYo9hCBYNPkYfk3VB9bP0U4QC1zB9-dOOYq8Vjss)
 - Расположить папки IntelliJ IDEA и ja-netfilter-all в одном каталоге.
-  (В папке `C:\Program Files\JetBrains\` должна быть и папка `IntelliJ IDEA 2022.1.2` и папка `ja-netfilter-all`)
+  (В папке `C:\Program Files\JetBrains` должна быть и папка `IntelliJ IDEA 2022.1.2` и папка `ja-netfilter-all`)
 
 ### Активация IntelliJ IDEA
 Активатор `ja-netfilter-all` позволяет активировать все среды разработок от компании JetBrains.
