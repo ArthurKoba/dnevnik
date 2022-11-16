@@ -1,0 +1,2 @@
+- Скачать и установить PostgreSQL (PostgreSQL можно скачать по ссылке: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+- Скачать и установить Glassfish и специальную версию Java (Glassfish и специальную версию Java можно скачать по ссылке: )
