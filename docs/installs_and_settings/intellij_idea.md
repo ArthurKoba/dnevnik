@@ -1,40 +1,52 @@
 ## Установка и настройка JetBrain IntelliJ IDEA
-В данной программе использовалась версии 
-- Java version 8 update 351;
-- JDK 19.0.1;
-- IntelliJ IDEA 2022.1.2 Ultimate чтобы скачать данную версию используйте эту magnet-ссылку: magnet:?xt=urn:btih:9E7F9BEC6CEC3006D32478DFF69FA034487D2B6C&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet&dn=JetBrains%20IntelliJ%20IDEA%20Ultimate%202022.1.2%20x64%20%5B2022%2C%20ENG%5D
+В данной документации при установках использовалась версии:
+- Java version 8 update 351 x64
+- JDK 19.0.1 x64
+- IntelliJ IDEA 2022.1.2 Ultimate | torrent: [magnet-link](magnet:?xt=urn:btih:9E7F9BEC6CEC3006D32478DFF69FA034487D2B6C&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet&dn=JetBrains%20IntelliJ%20IDEA%20Ultimate%202022.1.2%20x64%20%5B2022%2C%20ENG%5D) 
 
 ### Установка
-- Скачать и установить Java (новейшую версию Java можно скачать по ссылке: https://www.java.com/ru/download/manual.jsp);
-- Скачать и установить JDK (новейшую версию JDK можно скачать по ссылке: https://www.oracle.com/java/technologies/downloads/#jdk19-windows);
-- Скачать и установить IntelliJ IDEA (новейшую версию JDK можно скачать по ссылке: https://www.jetbrains.com/idea/download/#section=windows);
-- Скачать и разархивировать Jetbra (jetbra можно скачать по ссылке: https://mega.nz/file/TfxAjDpD#vQokGyvQSe6cK8ZXEy0MlbyVkFRgOe7b7MhpVSRIULY);
-- Расположить папки с IntelliJ IDEA и JetBra в одном каталоге;
-- Скачать и установить PostgreSQL (PostgreSQL можно скачать по ссылке: https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-- Скачать и установить Glassfish и специальную версию Java (Glassfish и специальную версию Java можно скачать по ссылке: )
+- Скачать и установить Java | [Link](https://www.java.com/ru/download/manual.jsp)
+- Скачать и установить JDK | [Link](https://www.oracle.com/java/technologies/downloads/)
+- Скачать и установить IntelliJ IDEA | [Link](https://www.jetbrains.com/idea/download/)
+- Скачать и разархивировать ja-netfilter (активатор) | [Link](https://mega.nz/file/ST4SXL6T#bCNSYo9hCBYNPkYfk3VB9bP0U4QC1zB9-dOOYq8Vjss)
+- Расположить папки IntelliJ IDEA и ja-netfilter-all в одном каталоге.
+  (В папке `C:\Program Files\JetBrains\` должна быть и папка `IntelliJ IDEA 2022.1.2` и папка `ja-netfilter-all`)
 
-### Активировать IntelliJ IDEA
-  - Перейти в каталог Jetbra -> ja-netfilter-all -> script -> install-all-users.vbs (с правами администратора);
-  - Перейти по ссылке https://jetbra.in/5d84466e31722979266057664941a71893322460
-  - Выбрать любой подходящий домен, скопировать ключ для IntelliJ IDEA;
-  - Открыть IntelliJ IDEA и вставить скопированный ключ ;
+### Активация IntelliJ IDEA
+Активатор `ja-netfilter-all` позволяет активировать все среды разработок от компании JetBrains.
+Потому достаточно найти самый актуальный активатор и выполнить через него активацию.
+Обычно в комплекте с активатором (в его архиве) содержится файл `readme.txt` в котором указывается ссылка на сайт со всеми ключами активаций для всех сред.
 
-### Открыть проект dnevnik
-- Открыть IntelliJ IDEA;
-- Во вкладке projects выбрать Get from VCS;
-- Выбрать Reprository URL и вставить ссылку: https://github.com/askozadaev/dnevnik
+  - Перейти в каталог `ja-netfilter-all` > `script`
+  - Запустить файл `install-all-users.vbs` (с правами администратора)
+  - Перейти по ссылке: https://jetbra.in/5d84466e31722979266057664941a71893322460 (может устареть или быть другой для конкретного активатора)
+  - Выбрать любой доступный домен, и перейти по нему.
+  - Среди списка IDE выбрать `IntelliJ IDEA` (ключ должен копироваться автоматически)
+  - Открыть IntelliJ IDEA и вставить скопированный ключ
+  - Активация должна быть успешной, но если ключ не подходит, необходимо искать другой активатор или сайт с ключами.
 
 ### Настройка
-- Настроить Git
-  -  Настроить Git
+Перейти в раздел настроек IDE | `ctrl + alt + S`
 
-- Настройка PostgreSQL
-  - Настройка PostgreSQL
+- `Editor` > `Natural languages` и добавляете русский язык. (Для того чтобы не подчеркивались русские строки в переменных и т.п.)
+- `Version Control` > `GitHub` добавляете ваш аккаунт. (Для того, чтобы вносить изменения в систему контроля версий проекта)
+
+### Проверка работоспособности
+
+- Создать тестовый проект с любым названием.
+  - `Language` (_Java_), `Build system` (_IntelliJ_), JDK (_Которое устанавливали сами_)
+  - Создать в папке `src` тестового проекта _Java Class_ c названием `Main`.
+  - В классе Main разместить содержимое:
+
   
-- Настройка Glassfish
-  - Настройка Glassfish
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
 
-- Добавить натуральные языки;
-  - Нажать сочетание клавиш ctrl + alt + s;
-  - Перейти по пути Editor -> Natural languages, и добавить русский язык;
-
+- Добавить конфигурацию запуска `Add Configuration` > `Add New` > `Application` 
+  и указать в поле `Main class` файл созданного класс `Main`.
+- Запустить тестовый проект кнопкой запуска или сочетанием клавиш `Shift + F10`
+- Если после запуска в терминале отобразиться `Hello, World!` - среда разработки IDEA и Java настроены правильно.
+- Удалить тестовый проект
