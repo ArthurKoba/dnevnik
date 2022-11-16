@@ -2,7 +2,10 @@
 В данной документации при установках использовалась версии:
 - Java version 8 update 351 x64
 - JDK 19.0.1 x64
-- IntelliJ IDEA 2022.1.2 Ultimate | torrent: [magnet-link](magnet:?xt=urn:btih:9E7F9BEC6CEC3006D32478DFF69FA034487D2B6C&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet&dn=JetBrains%20IntelliJ%20IDEA%20Ultimate%202022.1.2%20x64%20%5B2022%2C%20ENG%5D) 
+- IntelliJ IDEA 2022.1.2 Ultimate: 
+  
+
+    magnet:?xt=urn:btih:9E7F9BEC6CEC3006D32478DFF69FA034487D2B6C&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet&dn=JetBrains%20IntelliJ%20IDEA%20Ultimate%202022.1.2%20x64%20%5B2022%2C%20ENG%5D
 
 ### Установка
 - Скачать и установить Java | [Link](https://www.java.com/ru/download/manual.jsp)
