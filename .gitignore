@@ -1,3 +1,10 @@
+# IDE directories
+.idea
+*.iml
+
+# Maven build out
+target/
+
 # Compiled class file
 *.class
 
