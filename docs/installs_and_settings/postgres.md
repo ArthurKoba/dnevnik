@@ -1,3 +1,6 @@
+В данной документации при установках использовалась версии:
+- PostgreSQL 15
+
 ## Установка PostgreSQL
 
 - Скачать и установить PostgreSQL | [Link](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
